@@ -1,15 +1,16 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { VideoDB } from '../Firebase/config';
+import { deleteObject, getDownloadURL, ref, listAll } from 'firebase/storage';
+import Popup from "./Popup";
 
 
-import { Player } from 'video-react';
 
 const ProjectCard = ({
   index,
@@ -18,23 +19,57 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  time,
+  works,
+  video,
+  setDataPopup
 }) => {
-
-  const [isPopup, setpopUp] = useState(false);
+  useEffect(() => {
+  //   const videoRef = ref(VideoDB, 'video');
+  //   listAll(videoRef)
+  //     .then((result) => {
+  //       const videoURLs = [];
+  //       result.items.forEach((item) => {
+  //         getDownloadURL(item)
+  //           .then((url) => {
+  //             videoURLs.push(url);
+  //             // Kiểm tra xem đã lấy hết các URL chưa
+  //             if (videoURLs.length === result.items.length) {
+  //               console.log('Danh sách URL của các video:', videoURLs);
+  //             }
+  //           })
+  //           .catch((error) => {
+  //             console.error('Lỗi khi lấy URL cho video:', error);
+  //           });
+  //       });
+  //     })
+  // .catch((error) => {
+  //   console.error('Lỗi khi lấy danh sách video:', error);
+  // });
+  }, []);
+  
+  const handleSetDataPopup = () => {
+    const data = {
+      name: name,
+      time: time,
+      description: description,
+      works: works,
+      tags: tags,
+      video,
+    }
+    setDataPopup(data)
+  }
 
   return (
-    <motion.div onClick={()=>alert(1)} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div onClick={handleSetDataPopup} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer'
       >
-        <Player>
-          <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-        </Player>
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
@@ -77,6 +112,14 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [isPopup, setPopUp] = useState(false);
+  const [dataPopup, setDataPopup] = useState(false);
+
+
+  const handleSetDataPopup = (data) => {
+    setPopUp(true)
+    setDataPopup(data);
+  }
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -89,19 +132,17 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          The following projects showcase my skills and experience through real-world examples of my work. 
+          In addition, there are some personal projects by self-study.
         </motion.p>
       </div>
-
+      {isPopup && <Popup name="aaaa" handleClosePopup={()=>setPopUp(false)} data={dataPopup}/>}
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={`project-${index}`} index={index} {...project} setDataPopup={handleSetDataPopup}/>
         ))}
       </div>
+
     </>
   );
 };

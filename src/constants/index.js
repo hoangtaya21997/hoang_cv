@@ -15,14 +15,17 @@ import {
   git,
   figma,
   docker,
-  meta,
   carrent,
   jobit,
   tripguide,
   threejs,
   skyblaze,
   dweb,
-  mta
+  mta,
+  alliance,
+  switchGame,
+  gallery,
+  virtualPhoto
 } from "../assets";
 
 export const navLinks = [
@@ -205,30 +208,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Alliance",
+    time:"2020",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      "Trang web về bảo vệ môi trường biển",
+    works: [
+      "asdlsda",
+      "asdasdds",
+      "asdasdds",
+      "asdasdds",
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -243,29 +232,87 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: alliance,
     source_code_link: "https://github.com/",
+    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
   },
   {
-    name: "Trip Guide",
+    name: "Virtual Photobooth",
+    time:"2020",
+    description: "Trang Web chụp ảnh và làm đẹp, tạo short video với các hiệu ứng tùy chỉnh",
+    works: [
+      ""
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: virtualPhoto,
+    source_code_link: "https://github.com/",
+    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
+  },
+  
+  {
+    name: "Burger King Photo Gallery",
+    time:"2020",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Trang web hiển thị ảnh tại sự kiện Burger King",
+    works: [
+      ""
+    ],
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Typescript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: gallery,
     source_code_link: "https://github.com/",
+    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
+  },
+  {
+    name: "Switch Game",
+    time:"2020",
+    description:
+      "Trang web giớ thiệu về Switch và các chiến dịch của họ cùng với một vài game nhỏ",
+    works: [
+      ""
+    ],
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: switchGame,
+    source_code_link: "https://github.com/",
+    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
   },
 ];
 

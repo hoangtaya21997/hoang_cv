@@ -33,6 +33,10 @@ import avatar from "./avatar.png";
 import mta from "./mta.png";
 import dweb from "./dweb.png";
 import skyblaze from "./skyblaze.png";
+import alliance from "./alliance.png";
+import gallery from "./gallery.png";
+import switchGame from "./switch.png";
+import virtualPhoto from "./virtualPhoto.png";
 
 export {
   logo,
@@ -67,4 +71,8 @@ export {
   mta,
   dweb,
   skyblaze,
+  alliance,
+  gallery,
+  switchGame,
+  virtualPhoto
 };

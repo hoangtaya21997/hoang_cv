@@ -216,3 +216,55 @@
   background-repeat: no-repeat;
   background-position: right;
 }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffffde;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  color: #000000;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  overflow: scroll;
+  padding: 40px;
+  border-radius: 1rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+.video {
+  width: 50%;
+  margin-right: 2%;
+}
+.content {
+  width: 48%;
+}
+.pr-video {
+ width: 100%;
+ height: auto;
+}
+.close-popup {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: wheat;
+  margin-right: 5px;
+}
+.height-40 {
+  height: 40px;
+}
