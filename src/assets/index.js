@@ -29,6 +29,10 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import avatar from "./avatar.png";
+import mta from "./mta.png";
+import dweb from "./dweb.png";
+import skyblaze from "./skyblaze.png";
 
 export {
   logo,
@@ -59,4 +63,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  avatar,
+  mta,
+  dweb,
+  skyblaze,
 };

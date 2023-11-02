@@ -1,39 +1,8 @@
 import React from "react";
-import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
 
 const About = () => {
   return (
@@ -47,18 +16,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Tôi là một kỹ sư công nghệ thông tin đã tốt nghiệp tại học viện kỹ thuật quân sự năm 2020
+        <br/>Là một Frontend web developer với ba năng kinh nghiệm làm vệc với React,<br/>
+        có kỹ năng về HTML, CSS , SASS, Tailwind, Bootstrap, NextJS, Typescript, Redux, 
+        React Library, JavaScript, Jquery, React Native, Git/GitHub/GitLab, Vercel, Firebase
+        <br/>Ngoài ra tôi còn tự tìm hiểu thêm về laravel và Unity 2D game
+        <br/>Tôi Sử dụng thành tạo React, Lifecycle Component, và các thư viện của chúng, thiết kế component độc lập và dễ dàng tái sử dụng,
+        xây dựng UI phức tạp với mức độ chuẩn xác cao, nhanh chóng, thực hiện các animation đơn giản đến khá phức tạp.
+        <br/>Ngoài ra tôi là một người có tính cách khá hài hước, vui vẻ, học hỏi nhanh, và hoà đồng với mọi người, 
+        hợp tác chặt chẽ với các đồng nghiệp để cùng tạo ra các sản phẩm chất lượng nhất 
       </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };

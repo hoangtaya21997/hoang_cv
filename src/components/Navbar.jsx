@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import {  menu, close, avatar } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      } w-full flex items-center fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -42,14 +42,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <div alt='logo' className='w-12 h-12 object-contain avatar' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Nguyen Hoang
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 py-5'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}

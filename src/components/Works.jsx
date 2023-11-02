@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,9 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+
+import { Player } from 'video-react';
+
 const ProjectCard = ({
   index,
   name,
@@ -16,8 +19,11 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+
+  const [isPopup, setpopUp] = useState(false);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div onClick={()=>alert(1)} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -26,6 +32,9 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
+        <Player>
+          <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+        </Player>
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
