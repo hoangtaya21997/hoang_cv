@@ -2,15 +2,13 @@ import React, { useRef, useState, useEffect } from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, Internet } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { VideoDB } from '../Firebase/config';
 import { deleteObject, getDownloadURL, ref, listAll } from 'firebase/storage';
 import Popup from "./Popup";
-
-
 
 const ProjectCard = ({
   index,
@@ -22,7 +20,9 @@ const ProjectCard = ({
   time,
   works,
   video,
-  setDataPopup
+  setDataPopup,
+  link,
+  imageProject
 }) => {
   useEffect(() => {
   //   const videoRef = ref(VideoDB, 'video');
@@ -50,12 +50,15 @@ const ProjectCard = ({
   
   const handleSetDataPopup = () => {
     const data = {
-      name: name,
-      time: time,
-      description: description,
-      works: works,
-      tags: tags,
+      name,
+      time,
+      description,
+      works,
+      tags,
       video,
+      image,
+      link,
+      imageProject,
     }
     setDataPopup(data)
   }
@@ -64,13 +67,13 @@ const ProjectCard = ({
     <motion.div onClick={handleSetDataPopup} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 15,
           scale: 1,
           speed: 450,
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px]' >
           <img
             src={image}
             alt='project_image'
@@ -78,22 +81,34 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
+            {source_code_link && 
+              <div
+                onClick={(e) => {window.open(source_code_link, "_blank"); e.stopPropagation()}}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover-1'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            }
+              {link && <div
+                onClick={(e) => {window.open(link, "_blank"); e.stopPropagation()}}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover-1'
+              >
+                <img
+                  src={Internet}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>}
           </div>
         </div>
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-secondary text-[14px] ellipsis'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>

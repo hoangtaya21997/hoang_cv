@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBtq4c7C6bZP0Rmdd9_kjbuxIBabShVXU0",
-  authDomain: "videoprojectcv.firebaseapp.com",
-  projectId: "videoprojectcv",
-  storageBucket: "videoprojectcv.appspot.com",
-  messagingSenderId: "58246524319",
-  appId: "1:58246524319:web:da46a25f05cf996066a1aa"
+  apiKey: "AIzaSyBwyN-ve1qk7iBWh0-FBe52TKs29mLUhpc",
+  authDomain: "videocv-6a410.firebaseapp.com",
+  projectId: "videocv-6a410",
+  storageBucket: "videocv-6a410.appspot.com",
+  messagingSenderId: "476990899845",
+  appId: "1:476990899845:web:38f1eb8db79e8d88434bec"
 };
 
 const app = initializeApp(firebaseConfig);

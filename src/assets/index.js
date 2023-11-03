@@ -1,8 +1,4 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -21,14 +17,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import avatar from "./avatar.png";
 import mta from "./mta.png";
 import dweb from "./dweb.png";
@@ -37,13 +25,15 @@ import alliance from "./alliance.png";
 import gallery from "./gallery.png";
 import switchGame from "./switch.png";
 import virtualPhoto from "./virtualPhoto.png";
+import Loa from "./loa.png";
+import JseaRe from "./jsea-re.png";
+import Internet from "./internet.png";
+import Aepw from "./aepw.png";
+import Etech from "./etech.png";
+import Etech1 from "./etech_1.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -60,13 +50,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   avatar,
   mta,
   dweb,
@@ -74,5 +57,11 @@ export {
   alliance,
   gallery,
   switchGame,
-  virtualPhoto
+  virtualPhoto,
+  Loa,
+  JseaRe,
+  Internet,
+  Aepw,
+  Etech,
+  Etech1,
 };

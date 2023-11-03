@@ -8,34 +8,39 @@ const Popup = ({data,handleClosePopup}) => {
       <div className="inner bg-tertiary">
         <img src={close} className='w-[28px] h-[28px] object-contain close-popup' onClick={handleClosePopup}
         />
-        <div className="video">
-         <div className="height-40 w-full text-center text-[24px] text-white">Video Demo</div>
-          <video className="pr-video" controls >
-            <source src={data?.video} type="video/mp4"/>
-          </video>
-        </div>
-        <div className="content">
-        <div className=" w-full height-40"/>
-          <div className="text-[17px] text-white">
-            <span className=" text-[18px]">Thời gian: </span>
-            {data?.time}
+        {data?.video ?
+          <div className="video">
+          <div className="height-40 w-full text-center text-[24px] text-secondary">Video Demo</div>
+           <video className="pr-video" controls >
+             <source src={data?.video} type="video/mp4"/>
+           </video>
+         </div>
+        : (
+          <div className="img-popup">
+            <img
+              src={data?.imageProject || data?.image}
+              alt='project_image'
+            />
           </div>
-          <div className="text-[17px] text-white">
+        )}
+        <div className={`content`}>
+        <div className=" w-full height-40"/>
+          <div className="text-[17px] text-secondary mb-4">
             <span className=" text-[18px]">Tên Dự án: </span>
             {data?.name}
           </div>
-          <div className="text-[17px] text-white">
+          {data?.link && <div className="cursor-pointer link-pr text-secondary mb-4 text-[18px]" onClick={(e) => {window.open(data?.link, "_blank"); e.stopPropagation()}}>Link product</div>}
+          <div className="text-[17px] text-secondary mb-4">
             <span className=" text-[18px]">Mô Tả: </span>
             {data?.description}
           </div>
-          <div className="text-[17px] text-white">
+          <div className="text-[17px] text-secondary mb-4">
             <span className=" text-[18px]">công việc: </span>
-            {console.log(data)}
             {data?.works.map((value, index) => (
               <div>{value && <div key={index} className="flex items-center"><div className="dot"/><>{value}</></div>}</div>
             ))}
           </div>
-          <div className="text-[17px] text-white">
+          <div className="text-[17px] text-secondary mb-4">
             <span className=" text-[18px]">công Nghệ sử dụng: </span>
             <div className='flex flex-wrap gap-2'>
               {data?.tags.map((value, index) => (

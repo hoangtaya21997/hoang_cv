@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -15,9 +11,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   skyblaze,
   dweb,
@@ -25,7 +18,12 @@ import {
   alliance,
   switchGame,
   gallery,
-  virtualPhoto
+  virtualPhoto,
+  Loa,
+  JseaRe,
+  Aepw,
+  Etech,
+  Etech1,
 } from "../assets";
 
 export const navLinks = [
@@ -40,25 +38,6 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -96,24 +75,12 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -208,40 +175,44 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Alliance",
+    name: "Công Vinh Audio",
     time:"2020",
     description:
-      "Trang web về bảo vệ môi trường biển",
+      "Trang web bán hàng cung cấp phân phối âm thanh karaoke, Hội trường, dự án được thực hiện năm 3 đại học",
     works: [
-      "asdlsda",
-      "asdasdds",
-      "asdasdds",
-      "asdasdds",
+      "Xậy Dựng UI Toàn bộ trang web",
     ],
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
         name: "scss",
         color: "pink-text-gradient",
       },
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
     ],
-    image: alliance,
-    source_code_link: "https://github.com/",
-    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
+    image: Loa,
   },
   {
-    name: "Virtual Photobooth",
+    name: "Alliance",
     time:"2020",
-    description: "Trang Web chụp ảnh và làm đẹp, tạo short video với các hiệu ứng tùy chỉnh",
+    description:
+      "Trang web về giảm thiểu chất thải và bảo vệ môi trường biển, project chỉ cần giao diện và chức năng bên khách hàng sẽ đảm nhiệm backend",
     works: [
-      ""
+      "Tạo source code ReactJS",
+      "Xâu dựng UI Header, Footer, Trang Home, About, Resources, Media, RPT dựa theo Figma",
+      "Tạo Animation Hiện nội dung khi scroll đến Element",
+      "Tạo Animation Chuyển động của các túi rác thải, Chai nhựa, animation count number",
+      "Tạo Carousel bằng thư viện OwlCarousel phần Leaderships cho About page",
     ],
     tags: [
       {
@@ -249,26 +220,200 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "jquery",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: alliance,
+    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Falliance.mov?alt=media&token=63a74ecd-81cd-4cdf-aca2-e4c6e3b4daf7"
+  },
+  {
+    name: "Alliance Version 2",
+    time:"2020",
+    description:
+      "Trang web về giảm thiểu chất thải và bảo vệ môi trường biển, project chỉ cần giao diện và chức năng bên khách hàng sẽ đảm nhiệm backend",
+    works: [
+      "frontend chính của dự án",
+      "Tạo source code ReactJS",
+      "Xâu dựng UI Header, Footer, Trang OutWork, Our Stories, News, Membership, Clean4Change và Contact Us dựa theo Figma",
+      "Tạo Video autoplay trong banner trang Home",
+      "Tạo Carousel bằng thư viện OwlCarousel phần Our latest projects cho Home page",
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "jquery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Aepw,
+    link: "https://endplasticwaste.org/"
+  },
+  {
+    name: "JSEA Registration",
+    time:"2020",
+    description:
+      "Trang web hiển thị thông tin sự kiện và form đăng ký sự kiện cho người tham gia, sau khi đăng ký thành công gửi vé mời về email của người đăng ký",
+    works: [
+      "frontend chính của dự án",
+      "Xậy Dựng UI Header, Footer, Banner, Overview, Outline, Contact, Register theo Figma",
+      "Tạo Form và chức năng đăng ký cho phần Register",
+      "Integrate API register bằng axios",
+      "Tạo chức năng scroll to Element",
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: JseaRe,
+    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fregister-jsea.mov?alt=media&token=9f0541d3-d98b-446a-a08e-6c9c8ffa7f0a"
+  },
+  {
+    name: "Etech Portal, Scan Qrcode",
+    time:"2020",
+    description:
+      "Trang web hiển thị thông tin của tất cả mọi người đã tham gia đăng ký Event JSEA Registration, Khi đăng ký Event JSEA Registration thông tin sẽ được lưu lại tai trang web Etech Portal và vé mời tham dự sẽ được gửi vào email của người đăng ký bao gồi thời gian địa điểm và mã qr code, Khi đến tham gia sự kiện người đăng ký sẽ đưa ra mã qr code nhân viên sẽ Scan qr code đó cho phép họ vào tham gia sự kiện cũng như đưa ra thẻ đeo đúng với chức danh họ đã đăng ký trong sự kiên",
+    works: [
+      "Xây Dựng Trang web quét mã qr code",
+      "Xây dựng PopUp cho trang Etech Portal",
+      "Tạo Form và chức năng đăng ký cho phần Register",
+      "Integrate API trang qét mã qr code",
+      "Tạo React native app quét mã qr code cho ios",
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jquery",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "websocket",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Etech,
+    imageProject: Etech1,
+  },
+  {
+    name: "Virtual Photobooth",
+    time:"2020",
+    description: "Trang Web chụp ảnh và làm đẹp, tạo short video với các hiệu ứng tùy chỉnh, có thể chụp ảnh hoặc đăng ảnh để chỉnh sửa, thêm frame, sticker cho ảnh, quay video tạo bomerang...",
+    works: [
+      "frontend chính của dự án",
+      "Tạo Source code NextJS",
+      "Đảm nhiệm phần Photo",
+      "Tạo Canvas để lưu lại frame ảnh",
+      "Tạo UI Trang chụp ảnh, add Frame, add Stiker, lưu ảnh theo Figma",
+      "Tạo chức năng thêm Frame vào ảnh, Thêm Stickers vào ảnh",
+      "Tạo chức năng tải ảnh về dưới dạng .png",
+      "Integrate API",
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
     image: virtualPhoto,
-    source_code_link: "https://github.com/",
-    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
+    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2FvitualPhoto.mov?alt=media&token=7c339622-4728-45a5-a724-0e8caa5c8e61"
   },
   
   {
     name: "Burger King Photo Gallery",
     time:"2020",
     description:
-      "Trang web hiển thị ảnh tại sự kiện Burger King",
+      "Trang web hiển thị toàn bộ hình ảnh của một sự kiện theo từng danh mục",
     works: [
-      ""
+      "frontend chính của dự án",
+      "Thiết Kế UI Toàn bộ trang web theo Figma",
+      "Tạo animation hiểm thị ảnh, Thanh scroll, responsive",
+      "Tạo carousel bằng thư viện React-slick và chỉnh sửa giao diện",
+      "Lazy load cho hình ảnh",
+      "Integrate API danh sách hình ảnh bằng axios",
     ],
     tags: [
       {
@@ -283,10 +428,22 @@ const projects = [
         name: "sass",
         color: "pink-text-gradient",
       },
+      {
+        name: "laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
     ],
     image: gallery,
     source_code_link: "https://github.com/",
-    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
+    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fgallery.mov?alt=media&token=ced06c17-52de-45e5-b131-963749896698"
   },
   {
     name: "Switch Game",
@@ -294,7 +451,11 @@ const projects = [
     description:
       "Trang web giớ thiệu về Switch và các chiến dịch của họ cùng với một vài game nhỏ",
     works: [
-      ""
+      "Tạo UI trang Experiences game theo Figma",
+      "Tạo UI trang PIECE ME UP game",
+      "Xây dựng game PIECE ME UP bằng phương pháp kéo thả onDrag onDrop element",
+      "tạo chức năng âm thanh, animation bàn tay",
+      "responsive bằng phương pháp chia tỉ lệ theo % của các thẻ div"
     ],
     tags: [
       {
@@ -302,18 +463,23 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Typescript",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
         name: "sass",
         color: "pink-text-gradient",
       },
+      {
+        name: "jquery",
+        color: "blue-text-gradient",
+      },
     ],
     image: switchGame,
     source_code_link: "https://github.com/",
-    video:"https://firebasestorage.googleapis.com/v0/b/videoprojectcv.appspot.com/o/video%2FGhi%20Ma%CC%80n%20hi%CC%80nh%202023-11-02%20lu%CC%81c%2015.45.22.mov?alt=media&token=323d42a0-4a58-44e5-8f4f-efb38eca6676"
+    link:'https://switchproductions.asia/',
+    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fswitch.mov?alt=media&token=e2b2a4f9-c061-4603-827b-a83105a490b2"
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };
