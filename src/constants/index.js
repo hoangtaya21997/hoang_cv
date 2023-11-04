@@ -7,11 +7,8 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  threejs,
   skyblaze,
   dweb,
   mta,
@@ -28,6 +25,7 @@ import {
   AllianceVideo,
   GalleryVideo,
   JseaReVideo,
+  VitualVideo,
 } from "../assets";
 
 export const navLinks = [
@@ -403,7 +401,7 @@ const projects = [
       },
     ],
     image: virtualPhoto,
-    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2FvitualPhoto.mov?alt=media&token=7c339622-4728-45a5-a724-0e8caa5c8e61"
+    video: VitualVideo
   },
   
   {
