@@ -37,7 +37,7 @@ const Popup = ({data,handleClosePopup}) => {
           <div className="text-[17px] text-secondary mb-4">
             <span className=" text-[18px]">công việc: </span>
             {data?.works.map((value, index) => (
-              <div>{value && <div key={index} className="flex items-center"><div className="dot"/><>{value}</></div>}</div>
+              <div key={index}>{value && <div key={index} className="flex items-center"><div className="dot"/><>{value}</></div>}</div>
             ))}
           </div>
           <div className="text-[17px] text-secondary mb-4">

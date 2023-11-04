@@ -476,9 +476,9 @@ const projects = [
       },
     ],
     image: switchGame,
-    // source_code_link: "https://github.com/",
-    link:'https://github.com/hoangtaya21997/web_drag_game',
-    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fswitch.mov?alt=media&token=e2b2a4f9-c061-4603-827b-a83105a490b2"
+    source_code_link: "https://github.com/hoangtaya21997/web_drag_game",
+    link:'https://switchproductions.asia/',
+    video:"/src/assets/video/switch.mov"
   },
 ];
 
