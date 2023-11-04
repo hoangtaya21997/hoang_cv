@@ -32,6 +32,7 @@ import Aepw from "./aepw.png";
 import Etech from "./etech.png";
 import Etech1 from "./etech_1.png";
 import SwitchVideo from "./video/switch.mp4";
+import AllianceVideo from "./video/alliance.mp4";
 
 export {
   logo,
@@ -66,4 +67,5 @@ export {
   Etech,
   Etech1,
   SwitchVideo,
+  AllianceVideo,
 };

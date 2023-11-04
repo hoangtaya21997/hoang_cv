@@ -25,6 +25,7 @@ import {
   Etech,
   Etech1,
   SwitchVideo,
+  AllianceVideo,
 } from "../assets";
 
 export const navLinks = [
@@ -234,7 +235,7 @@ const projects = [
       },
     ],
     image: alliance,
-    video:"/src/assets/video/alliance.mp4"
+    video: AllianceVideo,
   },
   {
     name: "Alliance Version 2",
