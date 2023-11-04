@@ -35,6 +35,7 @@ import SwitchVideo from "./video/switch.mp4";
 import AllianceVideo from "./video/alliance.mp4";
 import GalleryVideo from "./video/gallery.mp4";
 import JseaReVideo from "./video/jsea_re.mp4";
+import VitualVideo from "./video/vitual.mp4";
 
 export {
   logo,
@@ -72,4 +73,5 @@ export {
   AllianceVideo,
   GalleryVideo,
   JseaReVideo,
+  VitualVideo,
 };
