@@ -26,6 +26,8 @@ import {
   Etech1,
   SwitchVideo,
   AllianceVideo,
+  GalleryVideo,
+  JseaReVideo,
 } from "../assets";
 
 export const navLinks = [
@@ -309,7 +311,7 @@ const projects = [
       },
     ],
     image: JseaRe,
-    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fregister-jsea.mov?alt=media&token=9f0541d3-d98b-446a-a08e-6c9c8ffa7f0a"
+    video: JseaReVideo
   },
   {
     name: "Etech Portal, Scan Qrcode",
@@ -445,7 +447,7 @@ const projects = [
     ],
     image: gallery,
     // source_code_link: "https://github.com/",
-    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fgallery.mov?alt=media&token=ced06c17-52de-45e5-b131-963749896698"
+    video: GalleryVideo
   },
   {
     name: "Switch Game",
