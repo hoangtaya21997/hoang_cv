@@ -233,7 +233,7 @@ const projects = [
       },
     ],
     image: alliance,
-    video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Falliance.mov?alt=media&token=63a74ecd-81cd-4cdf-aca2-e4c6e3b4daf7"
+    video:"/src/assets/video/alliance.mp4"
   },
   {
     name: "Alliance Version 2",
@@ -478,7 +478,7 @@ const projects = [
     image: switchGame,
     source_code_link: "https://github.com/hoangtaya21997/web_drag_game",
     link:'https://switchproductions.asia/',
-    video:"/src/assets/video/switch.mov"
+    video:"/src/assets/video/switch.mp4"
   },
 ];
 
