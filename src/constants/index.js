@@ -102,9 +102,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2020 - September 2020",
     points: [
-      "Thiết kế giao diện UI",
-      "Xây dựng website Bán đồ nội thất bằng wordpress",
-      "làm việc với HTML CSS và Jquery",
+      "Design UI web on PDF files",
+      "Build a furniture e-commerce website using WordPress.",
+      "Work with HTML, CSS, and jQuery.",
     ],
   },
   {
@@ -125,7 +125,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "October 2022 - December 2023",
     points: [
-      "Xây dựng dao các ứng dụng web sử dụng reactJS và NextJS và các công nghệ liên quan",
+      "Develop web applications using ReactJS, NextJS, and related technologies.",
       "Working in tandem with cross-functional teams, including designers, product managers, and fellow developers.",
       "Creating responsive websites and guaranteeing compatibility across different web browsers.",
       "Engaging in code reviews and offering valuable feedback to fellow developers."
@@ -138,10 +138,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "December 2022 - Present",
     points: [
-      "Xây dựng các ứng dụng ReactJS và NextJS và các công nghệ liên quan",
-      "là Front-end chính cho hầu hết các dự án của công ty",
-      "Xây dựng các ứng dụng như Scan qrcode, game kéo thả, Website đăng ký sự kiện, ứng dụng chụp ảnh làm đẹp, app quét mã qrcode ios, và các website có animation khá phức tạp",
-      "Thảo luận và đưa ra các phương pháp phù hợp cho từng dự án",
+      "Develop web applications using ReactJS, NextJS, and related technologies.",
+      "Serve as the lead Front-End Developer for the majority of the company's projects.",
+      "Create applications such as QR code scanning, Switch game, Website Register, Photo editing and beautification web development. app qr code scanning for ios and websites with fairly complex animations.",
+      "Discuss with team and propose suitable methods for each project.",
     ],
   },
 ];
@@ -442,7 +442,7 @@ const projects = [
       },
     ],
     image: gallery,
-    source_code_link: "https://github.com/",
+    // source_code_link: "https://github.com/",
     video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fgallery.mov?alt=media&token=ced06c17-52de-45e5-b131-963749896698"
   },
   {
@@ -476,8 +476,8 @@ const projects = [
       },
     ],
     image: switchGame,
-    source_code_link: "https://github.com/",
-    link:'https://switchproductions.asia/',
+    // source_code_link: "https://github.com/",
+    link:'https://github.com/hoangtaya21997/web_drag_game',
     video:"https://firebasestorage.googleapis.com/v0/b/videocv-6a410.appspot.com/o/video%2Fswitch.mov?alt=media&token=e2b2a4f9-c061-4603-827b-a83105a490b2"
   },
 ];

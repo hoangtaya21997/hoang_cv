@@ -147,8 +147,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          The following projects showcase my skills and experience through real-world examples of my work. 
-          In addition, there are some personal projects by self-study.
+          The following projects showcase my skills and experience through real-life examples of my work. Please click on each project to discover more about the project details as well as my role in these projects.
+          <br/>
+          All these projects have been shared on my CV with the company's approval. Additionally, I have several more projects that I haven't uploaded yet due to the need for some revisions. I will update them in the future.
         </motion.p>
       </div>
       {isPopup && <Popup name="aaaa" handleClosePopup={()=>setPopUp(false)} data={dataPopup}/>}
