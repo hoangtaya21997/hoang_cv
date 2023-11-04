@@ -21,6 +21,8 @@ import {
   Aepw,
   Etech,
   Etech1,
+  Lysb,
+  LysbPr,
   SwitchVideo,
   AllianceVideo,
   GalleryVideo,
@@ -177,34 +179,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Công Vinh Audio",
-    time:"2020",
-    description:
-      "Trang web bán hàng cung cấp phân phối âm thanh karaoke, Hội trường, dự án được thực hiện năm 3 đại học",
-    works: [
-      "Xậy Dựng UI Toàn bộ trang web",
-    ],
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: Loa,
-  },
-  {
     name: "Alliance",
     time:"2020",
     description:
@@ -236,6 +210,49 @@ const projects = [
     ],
     image: alliance,
     video: AllianceVideo,
+  },
+  {
+    name: "Virtual Photobooth",
+    time:"2020",
+    description: "Trang Web chụp ảnh và làm đẹp, tạo short video với các hiệu ứng tùy chỉnh, có thể chụp ảnh hoặc đăng ảnh để chỉnh sửa, thêm frame, sticker cho ảnh, quay video tạo bomerang...",
+    works: [
+      "frontend chính của dự án",
+      "Tạo Source code NextJS",
+      "Đảm nhiệm phần Photo",
+      "Tạo Canvas để lưu lại frame ảnh",
+      "Tạo UI Trang chụp ảnh, add Frame, add Stiker, lưu ảnh theo Figma",
+      "Tạo chức năng thêm Frame vào ảnh, Thêm Stickers vào ảnh",
+      "Tạo chức năng tải ảnh về dưới dạng .png",
+      "Integrate API",
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: virtualPhoto,
+    video: VitualVideo
   },
   {
     name: "Alliance Version 2",
@@ -360,49 +377,6 @@ const projects = [
     image: Etech,
     imageProject: Etech1,
   },
-  {
-    name: "Virtual Photobooth",
-    time:"2020",
-    description: "Trang Web chụp ảnh và làm đẹp, tạo short video với các hiệu ứng tùy chỉnh, có thể chụp ảnh hoặc đăng ảnh để chỉnh sửa, thêm frame, sticker cho ảnh, quay video tạo bomerang...",
-    works: [
-      "frontend chính của dự án",
-      "Tạo Source code NextJS",
-      "Đảm nhiệm phần Photo",
-      "Tạo Canvas để lưu lại frame ảnh",
-      "Tạo UI Trang chụp ảnh, add Frame, add Stiker, lưu ảnh theo Figma",
-      "Tạo chức năng thêm Frame vào ảnh, Thêm Stickers vào ảnh",
-      "Tạo chức năng tải ảnh về dưới dạng .png",
-      "Integrate API",
-    ],
-    tags: [
-      {
-        name: "Laravel",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: virtualPhoto,
-    video: VitualVideo
-  },
   
   {
     name: "Burger King Photo Gallery",
@@ -481,6 +455,83 @@ const projects = [
     source_code_link: "https://github.com/hoangtaya21997/web_drag_game",
     link:'https://switchproductions.asia/',
     video: SwitchVideo
+  },
+  {
+    name: "Công Vinh Audio",
+    time:"2020",
+    description:
+      "Trang web bán hàng cung cấp phân phối âm thanh karaoke, Hội trường, dự án được thực hiện năm 3 đại học",
+    works: [
+      "Xậy Dựng UI Toàn bộ trang web",
+    ],
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Loa,
+  },
+  {
+    name: "Web LYSB",
+    time:"2020",
+    description:
+      "Trang web quay gacha để các nhận thưởng theo tỷ lệ",
+    works: [
+      "Xậy Dựng UI Toàn bộ trang web",
+      "Tạo Carousel bằng thư viện OwlCarousel ",
+      "Play Video quay gacha",
+      "Tạo UI và logic cho popup Sign Up form",
+      "intergrate API quay gacha"
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jquery",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "websocket",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Lysb,
+    imageProject: LysbPr,
   },
 ];
 

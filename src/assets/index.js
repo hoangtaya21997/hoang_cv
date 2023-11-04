@@ -31,6 +31,9 @@ import Internet from "./internet.png";
 import Aepw from "./aepw.png";
 import Etech from "./etech.png";
 import Etech1 from "./etech_1.png";
+import Lysb from "./lysb.png";
+import LysbPr from "./lysb_pr.png";
+
 import SwitchVideo from "./video/switch.mp4";
 import AllianceVideo from "./video/alliance.mp4";
 import GalleryVideo from "./video/gallery.mp4";
@@ -69,6 +72,8 @@ export {
   Aepw,
   Etech,
   Etech1,
+  Lysb,
+  LysbPr,
   SwitchVideo,
   AllianceVideo,
   GalleryVideo,
