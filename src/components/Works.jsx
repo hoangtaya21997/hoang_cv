@@ -6,8 +6,6 @@ import { github, Internet } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { VideoDB } from '../Firebase/config';
-import { deleteObject, getDownloadURL, ref, listAll } from 'firebase/storage';
 import Popup from "./Popup";
 
 const ProjectCard = ({
@@ -24,30 +22,6 @@ const ProjectCard = ({
   link,
   imageProject
 }) => {
-  useEffect(() => {
-  //   const videoRef = ref(VideoDB, 'video');
-  //   listAll(videoRef)
-  //     .then((result) => {
-  //       const videoURLs = [];
-  //       result.items.forEach((item) => {
-  //         getDownloadURL(item)
-  //           .then((url) => {
-  //             videoURLs.push(url);
-  //             // Kiểm tra xem đã lấy hết các URL chưa
-  //             if (videoURLs.length === result.items.length) {
-  //               console.log('Danh sách URL của các video:', videoURLs);
-  //             }
-  //           })
-  //           .catch((error) => {
-  //             console.error('Lỗi khi lấy URL cho video:', error);
-  //           });
-  //       });
-  //     })
-  // .catch((error) => {
-  //   console.error('Lỗi khi lấy danh sách video:', error);
-  // });
-  }, []);
-  
   const handleSetDataPopup = () => {
     const data = {
       name,

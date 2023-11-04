@@ -10,7 +10,7 @@ const Popup = ({data,handleClosePopup}) => {
         />
         {data?.video ?
           <div className="video">
-          <div className="height-40 w-full text-center text-[24px] text-secondary">Video Demo</div>
+          <div className="height-40 w-full text-center text-[24px] text-secondary">Video</div>
            <video className="pr-video" controls >
              <source src={data?.video} type="video/mp4"/>
            </video>
@@ -29,7 +29,7 @@ const Popup = ({data,handleClosePopup}) => {
             <span className=" text-[18px]">Tên Dự án: </span>
             {data?.name}
           </div>
-          {data?.link && <div className="cursor-pointer link-pr text-secondary mb-4 text-[18px]" onClick={(e) => {window.open(data?.link, "_blank"); e.stopPropagation()}}>Link product</div>}
+          {data?.link && <div className="cursor-pointer link-pr text-secondary mb-4 text-[18px]" onClick={(e) => {window.open(data?.link, "_blank"); e.stopPropagation()}}>Link Website</div>}
           <div className="text-[17px] text-secondary mb-4">
             <span className=" text-[18px]">Mô Tả: </span>
             {data?.description}

@@ -96,7 +96,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "2015-2020",
     points: [
-      "Study at university",
+      "Study at my university",
     ],
   },
   {
