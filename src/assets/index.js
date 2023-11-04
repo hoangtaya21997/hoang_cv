@@ -31,6 +31,7 @@ import Internet from "./internet.png";
 import Aepw from "./aepw.png";
 import Etech from "./etech.png";
 import Etech1 from "./etech_1.png";
+import SwitchVideo from "./video/switch.mp4";
 
 export {
   logo,
@@ -64,4 +65,5 @@ export {
   Aepw,
   Etech,
   Etech1,
+  SwitchVideo,
 };

@@ -24,6 +24,7 @@ import {
   Aepw,
   Etech,
   Etech1,
+  SwitchVideo,
 } from "../assets";
 
 export const navLinks = [
@@ -478,7 +479,7 @@ const projects = [
     image: switchGame,
     source_code_link: "https://github.com/hoangtaya21997/web_drag_game",
     link:'https://switchproductions.asia/',
-    video:"/src/assets/video/switch.mp4"
+    video: SwitchVideo
   },
 ];
 
