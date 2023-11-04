@@ -289,3 +289,11 @@
 .link-pr {
   text-decoration:underline;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
