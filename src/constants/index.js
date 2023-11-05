@@ -116,7 +116,7 @@ const experiences = [
     company_name: "Skyblaze Studios",
     icon: skyblaze,
     iconBg: "#383E56",
-    date: "October 2022 - December 2023",
+    date: "October 2020 - December 2020",
     points: [
       "Engage and gain experience through actual projects.",
       "Contribute to the development of User Interfaces and fixing bugs.",
@@ -127,7 +127,7 @@ const experiences = [
     company_name: "Skyblaze Studios",
     icon: skyblaze,
     iconBg: "#383E56",
-    date: "October 2022 - December 2023",
+    date: "January 2021 - January 2022",
     points: [
       "Develop web applications using ReactJS, NextJS, and related technologies.",
       "Working in tandem with cross-functional teams, including designers, product managers, and fellow developers.",
@@ -140,7 +140,7 @@ const experiences = [
     company_name: "Skyblaze Studios",
     icon: skyblaze,
     iconBg: "#383E56",
-    date: "December 2022 - Present",
+    date: "January 2022 - Present",
     points: [
       "Develop web applications using ReactJS, NextJS, and related technologies.",
       "Serve as the lead Front-End Developer for the majority of the company's projects.",
@@ -185,7 +185,7 @@ const projects = [
       "Trang web về giảm thiểu chất thải và bảo vệ môi trường biển, project chỉ cần giao diện và chức năng bên khách hàng sẽ đảm nhiệm backend",
     works: [
       "Tạo source code ReactJS",
-      "Xâu dựng UI Header, Footer, Trang Home, About, Resources, Media, RPT dựa theo Figma",
+      "Xây dựng UI Header, Footer, Trang Home, About, Resources, Media, RPT dựa theo Figma",
       "Tạo Animation Hiện nội dung khi scroll đến Element",
       "Tạo Animation Chuyển động của các túi rác thải, Chai nhựa, animation count number",
       "Tạo Carousel bằng thư viện OwlCarousel phần Leaderships cho About page",
@@ -262,7 +262,7 @@ const projects = [
     works: [
       "frontend chính của dự án",
       "Tạo source code ReactJS",
-      "Xâu dựng UI Header, Footer, Trang OutWork, Our Stories, News, Membership, Clean4Change và Contact Us dựa theo Figma",
+      "Xây dựng UI Header, Footer, Trang OutWork, Our Stories, News, Membership, Clean4Change và Contact Us dựa theo Figma",
       "Tạo Video autoplay trong banner trang Home",
       "Tạo Carousel bằng thư viện OwlCarousel phần Our latest projects cho Home page",
     ],

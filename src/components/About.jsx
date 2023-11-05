@@ -16,7 +16,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]'
       >
-        I am a computer science engineer who graduated from the Military Technical Academy in 2020.
+        I am a Information Technology engineer who graduated from the Military Technical Academy in 2020.
         <br/> As a Frontend web developer with three years of experience working with React, I possess skills in HTML, CSS, SASS, Tailwind, Bootstrap, NextJS, TypeScript, Redux, React Library, JavaScript, jQuery, React Native, Git/GitHub/GitLab, Vercel, and Firebase.
         <br/>In addition, I have proactively explored Laravel and Unity 2D game development. 
         <br/>I am proficient in creating React applications, managing component lifecycles, and utilizing various libraries. 
