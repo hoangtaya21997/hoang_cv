@@ -38,7 +38,7 @@ const ProjectCard = ({
   }
 
   return (
-    <motion.div onClick={handleSetDataPopup} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div onClick={handleSetDataPopup}>
       <Tilt
         options={{
           max: 15,
@@ -96,7 +96,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
@@ -111,20 +111,19 @@ const Works = () => {
   }
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+        <div
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           The following projects showcase my skills and experience through real-life examples of my work. Please click on each project to discover more about the project details as well as my role in these projects.
           <br/>
           All these projects have been shared on my CV with the company's approval. Additionally, I have several more projects that I haven't uploaded yet due to the need for some revisions. I will update them in the future.
-        </motion.p>
+        </div>
       </div>
       {isPopup && <Popup name="aaaa" handleClosePopup={()=>setPopUp(false)} data={dataPopup}/>}
       <div className='mt-20 flex flex-wrap gap-7'>
