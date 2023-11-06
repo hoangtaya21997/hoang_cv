@@ -133,6 +133,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2021 - January 2022",
     points: [
+      "Served as the primary frontend developer in most of the projects.",
+      "Seminar on React, UI, and UX techniques for building effective components.",
+      "Exploring React Native with Expo,CLI and learn about 2D Unity game.",
       "Develop web applications using ReactJS, NextJS, and related technologies.",
       "Working in tandem with cross-functional teams, including designers, product managers, and fellow developers.",
       "Creating responsive websites and guaranteeing compatibility across different web browsers.",
