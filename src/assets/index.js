@@ -36,6 +36,7 @@ import LysbPr from "./lysb_pr.png";
 import HBL from "./HBL.png";
 import Tableau from "./tableau.png";
 import TableauPr from "./tableau_1.png";
+import UnityG from "./unityG.png";
 
 import SwitchVideo from "./video/switch.mp4";
 import AllianceVideo from "./video/alliance.mp4";
@@ -85,4 +86,5 @@ export {
   GalleryVideo,
   JseaReVideo,
   VitualVideo,
+  UnityG,
 };

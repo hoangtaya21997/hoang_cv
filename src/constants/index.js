@@ -31,6 +31,7 @@ import {
   HBL,
   Tableau,
   TableauPr,
+  UnityG,
 } from "../assets";
 
 export const navLinks = [
@@ -626,6 +627,25 @@ const projects = [
     ],
     image: Tableau,
     imageProject: TableauPr,
+  },
+  {
+    name: "Unity 2D game",
+    time:"2020",
+    description:
+      "Training the team in Unity 2D game development, Creating a game similar to Mario with customizable and editable characters.",
+    works: [
+      "Implement characters and maps.",
+      "Adding character animations (idle, run, jump, fall, die) and corresponding sound effects for each animation.",
+      "Implementing character item pickup, collision with objects, and collision with traps functionality",
+      "Implementing the menu selection and level transition functionality.",
+    ],
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: UnityG,
   },
 ];
 
