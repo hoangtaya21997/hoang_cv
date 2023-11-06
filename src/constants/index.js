@@ -133,9 +133,6 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2021 - January 2022",
     points: [
-      "Served as the primary frontend developer in most of the projects.",
-      "Seminar on React, UI, and UX techniques for building effective components.",
-      "Exploring React Native with Expo,CLI and learn about 2D Unity game.",
       "Develop web applications using ReactJS, NextJS, and related technologies.",
       "Working in tandem with cross-functional teams, including designers, product managers, and fellow developers.",
       "Creating responsive websites and guaranteeing compatibility across different web browsers.",
@@ -149,6 +146,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2022 - Present",
     points: [
+      "Served as the primary frontend developer in most of the projects.",
+      "Seminar on React, UI, and UX techniques for building effective components.",
+      "Exploring React Native with Expo,CLI and learn about 2D Unity game.",
       "Develop web applications using ReactJS, NextJS, and related technologies.",
       "Serve as the lead Front-End Developer for the majority of the company's projects.",
       "Create applications such as QR code scanning, Switch game, Website Register, Photo editing and beautification web development. app qr code scanning for ios and websites with fairly complex animations.",
