@@ -26,22 +26,22 @@ const Popup = ({data,handleClosePopup}) => {
         <div className={`content`}>
         <div className=" w-full height-40"/>
           <div className="text-[17px] text-secondary mb-4">
-            <span className=" text-[18px]">Tên Dự án: </span>
+            <span className=" text-[18px]">Project Name: </span>
             {data?.name}
           </div>
           {data?.link && <div className="cursor-pointer link-pr text-secondary mb-4 text-[18px]" onClick={(e) => {window.open(data?.link, "_blank"); e.stopPropagation()}}>Link Website</div>}
           <div className="text-[17px] text-secondary mb-4">
-            <span className=" text-[18px]">Mô Tả: </span>
+            <span className=" text-[18px]">Description: </span>
             {data?.description}
           </div>
           <div className="text-[17px] text-secondary mb-4">
-            <span className=" text-[18px]">công việc: </span>
+            <span className=" text-[18px]">Contribution: </span>
             {data?.works.map((value, index) => (
               <div key={index}>{value && <div key={index} className="flex items-center"><div className="dot"/><>{value}</></div>}</div>
             ))}
           </div>
           <div className="text-[17px] text-secondary mb-4">
-            <span className=" text-[18px]">công Nghệ sử dụng: </span>
+            <span className=" text-[18px]">Technology: </span>
             <div className='flex flex-wrap gap-2'>
               {data?.tags.map((value, index) => (
                 <p key={`${value?.name}-${index}`} className={`text-[14px] ${value.color}`}>#{value?.name}</p>

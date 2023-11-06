@@ -33,6 +33,9 @@ import Etech from "./etech.png";
 import Etech1 from "./etech_1.png";
 import Lysb from "./lysb.png";
 import LysbPr from "./lysb_pr.png";
+import HBL from "./HBL.png";
+import Tableau from "./tableau.png";
+import TableauPr from "./tableau_1.png";
 
 import SwitchVideo from "./video/switch.mp4";
 import AllianceVideo from "./video/alliance.mp4";
@@ -74,6 +77,9 @@ export {
   Etech1,
   Lysb,
   LysbPr,
+  HBL,
+  Tableau,
+  TableauPr,
   SwitchVideo,
   AllianceVideo,
   GalleryVideo,

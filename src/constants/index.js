@@ -28,6 +28,9 @@ import {
   GalleryVideo,
   JseaReVideo,
   VitualVideo,
+  HBL,
+  Tableau,
+  TableauPr,
 } from "../assets";
 
 export const navLinks = [
@@ -182,13 +185,13 @@ const projects = [
     name: "Alliance",
     time:"2020",
     description:
-      "Trang web về giảm thiểu chất thải và bảo vệ môi trường biển, project chỉ cần giao diện và chức năng bên khách hàng sẽ đảm nhiệm backend",
+      "website focusing on waste reduction and marine environmental protection.",
     works: [
-      "Tạo source code ReactJS",
-      "Xây dựng UI Header, Footer, Trang Home, About, Resources, Media, RPT dựa theo Figma",
-      "Tạo Animation Hiện nội dung khi scroll đến Element",
-      "Tạo Animation Chuyển động của các túi rác thải, Chai nhựa, animation count number",
-      "Tạo Carousel bằng thư viện OwlCarousel phần Leaderships cho About page",
+      "create source code base ReactJS",
+      "Implement UI Header, Footer, Home page, About, Resources, Media, RPT follow Figma",
+      "Implement Scroll Fade-In Effect, Floating Animation.",
+      "Implement Carousel using the OwlCarousel library and custom css, animation count number",
+      "Responsive and fix bugs",
     ],
     tags: [
       {
@@ -214,16 +217,16 @@ const projects = [
   {
     name: "Virtual Photobooth",
     time:"2020",
-    description: "Trang Web chụp ảnh và làm đẹp, tạo short video với các hiệu ứng tùy chỉnh, có thể chụp ảnh hoặc đăng ảnh để chỉnh sửa, thêm frame, sticker cho ảnh, quay video tạo bomerang...",
+    description: "website for capturing and beautifying photos, creating short videos with custom effects, adding frames and stickers to photos, and shooting videos to make boomerangs",
     works: [
-      "frontend chính của dự án",
-      "Tạo Source code NextJS",
-      "Đảm nhiệm phần Photo",
-      "Tạo Canvas để lưu lại frame ảnh",
-      "Tạo UI Trang chụp ảnh, add Frame, add Stiker, lưu ảnh theo Figma",
-      "Tạo chức năng thêm Frame vào ảnh, Thêm Stickers vào ảnh",
-      "Tạo chức năng tải ảnh về dưới dạng .png",
-      "Integrate API",
+      "Create Source base NextJS typescript",
+      "Implement Photo section, UI Photo, UI add Frame, UI add Sticker, UI share and download Image",
+      "Use canvas to save image and add sticker and frame",
+      "Implement the photo capture feature and save the image to canvas",
+      "Implement the function to add frames and stickers to image in canvas.",
+      "Implementing the drag-and-drop sticker feature using the Fabric library.",
+      "Export an image from the canvas and implement the feature to download the image to the device.",
+      "Integrate api, Responsive and fix bugs.",
     ],
     tags: [
       {
@@ -258,13 +261,13 @@ const projects = [
     name: "Alliance Version 2",
     time:"2020",
     description:
-      "Trang web về giảm thiểu chất thải và bảo vệ môi trường biển, project chỉ cần giao diện và chức năng bên khách hàng sẽ đảm nhiệm backend",
+      "website focusing on waste reduction and marine environmental protection.",
     works: [
-      "frontend chính của dự án",
-      "Tạo source code ReactJS",
-      "Xây dựng UI Header, Footer, Trang OutWork, Our Stories, News, Membership, Clean4Change và Contact Us dựa theo Figma",
-      "Tạo Video autoplay trong banner trang Home",
-      "Tạo Carousel bằng thư viện OwlCarousel phần Our latest projects cho Home page",
+      "Implement UI Header, Footer, OutWork, Our Stories, News, Membership, Clean4Change và Contact Us follow Figma",
+      "Implement Scroll Fade-In Effect, Floating Animation",
+      "Implement Carousel using the OwlCarousel library and custom css",
+      "Implement video autoplay react-player",
+      "Responsive and fix bug"
     ],
     tags: [
       {
@@ -291,13 +294,15 @@ const projects = [
     name: "JSEA Registration",
     time:"2020",
     description:
-      "Trang web hiển thị thông tin sự kiện và form đăng ký sự kiện cho người tham gia, sau khi đăng ký thành công gửi vé mời về email của người đăng ký",
+      "Website displaying event information and a registration form for participants. After successful registration, it sends an invitation ticket to the registrant's email, including the time, location, and a QR code",
     works: [
-      "frontend chính của dự án",
-      "Xậy Dựng UI Header, Footer, Banner, Overview, Outline, Contact, Register theo Figma",
-      "Tạo Form và chức năng đăng ký cho phần Register",
-      "Integrate API register bằng axios",
-      "Tạo chức năng scroll to Element",
+      "Implement UI page follow Figma.",
+      "Implement the registration function.",
+      "Implement countdown function",
+      "Integrate API register",
+      "Implementing an API to display agenda information.",
+      "Create the scroll to element function.",
+      "Responsive and fix bugs"
     ],
     tags: [
       {
@@ -332,13 +337,13 @@ const projects = [
     name: "Etech Portal, Scan Qrcode",
     time:"2020",
     description:
-      "Trang web hiển thị thông tin của tất cả mọi người đã tham gia đăng ký Event JSEA Registration, Khi đăng ký Event JSEA Registration thông tin sẽ được lưu lại tai trang web Etech Portal và vé mời tham dự sẽ được gửi vào email của người đăng ký bao gồi thời gian địa điểm và mã qr code, Khi đến tham gia sự kiện người đăng ký sẽ đưa ra mã qr code nhân viên sẽ Scan qr code đó cho phép họ vào tham gia sự kiện cũng như đưa ra thẻ đeo đúng với chức danh họ đã đăng ký trong sự kiên",
+      "A website stores all the information of users who have successfully Event Register for an event. It allows for editing and displaying user information. When the event takes place, users bring their invitation emails with QR codes. Event staff scan the QR codes to verify the registrant's information and print corresponding badges based on the information they provided during the event registration.",
     works: [
-      "Xây Dựng Trang web quét mã qr code",
-      "Xây dựng PopUp cho trang Etech Portal",
-      "Tạo Form và chức năng đăng ký cho phần Register",
-      "Integrate API trang qét mã qr code",
-      "Tạo React native app quét mã qr code cho ios",
+      "Implement UI Scan QR code page.",
+      "Implement UI Popup Show info user registered in Etech Portal page",
+      "Implement Scan QR code function and Integrate API scan.",
+      "Create React Native app Scan qrcode for IOS",
+      "Responsive Scan QR code page and Fix bugs",
     ],
     tags: [
       {
@@ -382,14 +387,14 @@ const projects = [
     name: "Burger King Photo Gallery",
     time:"2020",
     description:
-      "Trang web hiển thị toàn bộ hình ảnh của một sự kiện theo từng danh mục",
+      "website displaying all event images categorized by event after the event has concluded. Users can click to view and download images to their device",
     works: [
-      "frontend chính của dự án",
-      "Thiết Kế UI Toàn bộ trang web theo Figma",
-      "Tạo animation hiểm thị ảnh, Thanh scroll, responsive",
-      "Tạo carousel bằng thư viện React-slick và chỉnh sửa giao diện",
-      "Lazy load cho hình ảnh",
-      "Integrate API danh sách hình ảnh bằng axios",
+      "Implement UI lists images.",
+      "Implement the image detail display functionality using the React-Slick carousel.",
+      "Implement function download image to device image.png",
+      "Implement animation Show, scale image",
+      "Integrate API list images",
+      "Responsive and Fix bugs",
     ],
     tags: [
       {
@@ -425,13 +430,13 @@ const projects = [
     name: "Switch Game",
     time:"2020",
     description:
-      "Trang web giớ thiệu về Switch và các chiến dịch của họ cùng với một vài game nhỏ",
+      "website introducing Switch and their campaigns, along with creating a few small games.",
     works: [
-      "Tạo UI trang Experiences game theo Figma",
-      "Tạo UI trang PIECE ME UP game",
-      "Xây dựng game PIECE ME UP bằng phương pháp kéo thả onDrag onDrop element",
-      "tạo chức năng âm thanh, animation bàn tay",
-      "responsive bằng phương pháp chia tỉ lệ theo % của các thẻ div"
+      "Implement Experiences page follow Figma",
+      "Create the UI for the 'PIECE ME UP' game page.",
+      "Implement the 'PIECE ME UP' game using the drag-and-drop method with onDrag and onDrop elements.",
+      "Implement play sound and video with react-player, implement hand animation features.",
+      "Responsive using percentage-based scaling according to the device's frame"
     ],
     tags: [
       {
@@ -460,9 +465,9 @@ const projects = [
     name: "Công Vinh Audio",
     time:"2020",
     description:
-      "Trang web bán hàng cung cấp phân phối âm thanh karaoke, Hội trường, dự án được thực hiện năm 3 đại học",
+      "website selling audio equipment for karaoke, conference halls,",
     works: [
-      "Xậy Dựng UI Toàn bộ trang web",
+      "Implement UI all page",
     ],
     tags: [
       {
@@ -488,13 +493,14 @@ const projects = [
     name: "Web LYSB",
     time:"2020",
     description:
-      "Trang web quay gacha để các nhận thưởng theo tỷ lệ",
+      "website for spinning a gacha to receive rewards based on probabilities.",
     works: [
-      "Xậy Dựng UI Toàn bộ trang web",
-      "Tạo Carousel bằng thư viện OwlCarousel ",
-      "Play Video quay gacha",
-      "Tạo UI và logic cho popup Sign Up form",
-      "intergrate API quay gacha"
+      "Create Source base NextJS typescript",
+      "implement Carousel using owlcarousel library",
+      "Implement UI Page",
+      "Integrate AIP gacha",
+      "Implement the UI and registration function to receive rewards.",
+      "implement show video gacha using react-player library"
     ],
     tags: [
       {
@@ -532,6 +538,94 @@ const projects = [
     ],
     image: Lysb,
     imageProject: LysbPr,
+  },
+  {
+    name: "HBL VE",
+    time:"2020",
+    description:
+      "website that allows HBL users to search for information and download their PDF files.",
+    works: [
+      "Implement UI page follow Figma",
+      "Responsive as per request, scaling down in both horizontal and vertical directions to ensure 100% content visibility",
+      "Integrate API Info use and function download PDF file",
+      "Fix bugs",
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jquery",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: HBL,
+  },
+  {
+    name: "Tableau VOD",
+    time:"2020",
+    description:
+      "Website displaying Tableau event information chronologically, from registration events, followed by live events, and concluding with VOD video viewing events.",
+    works: [
+      "Implementing a countdown function to display time intervals for event phases: registration start, registration end, live event start, live event end, VOD viewing event.",
+      "Implement UI Home page, Login Page, Live Page, Register page",
+      "Implement UI and function Register",
+      "Implement UI and function Login User",
+      "Responsive and fix bugs",
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jquery",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Tableau,
+    imageProject: TableauPr,
   },
 ];
 
