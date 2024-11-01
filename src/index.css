@@ -307,7 +307,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     padding: 60px 10px;
     overflow: scroll;
-    max-height: 100vh;
+    max-height: 80vh;
     flex-wrap: nowrap;
     flex: 1;
   }
