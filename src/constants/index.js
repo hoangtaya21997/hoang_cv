@@ -18,7 +18,6 @@ import {
   virtualPhoto,
   Loa,
   JseaRe,
-  Aepw,
   Etech,
   Etech1,
   Lysb,
@@ -28,10 +27,15 @@ import {
   GalleryVideo,
   JseaReVideo,
   VitualVideo,
-  HBL,
   Tableau,
   TableauPr,
   UnityG,
+  Vcc,
+  Vtv,
+  BCM,
+  EURO,
+  DiemThi,
+  ShopTTo
 } from "../assets";
 
 export const navLinks = [
@@ -116,35 +120,11 @@ const experiences = [
     ],
   },
   {
-    title: "Front-end Wed Developer Internship",
+    title: "Frontend Web Developer",
     company_name: "Skyblaze Studios",
     icon: skyblaze,
     iconBg: "#383E56",
-    date: "October 2020 - December 2020",
-    points: [
-      "Engage and gain experience through actual projects.",
-      "Contribute to the development of User Interfaces and fixing bugs.",
-    ],
-  },
-  {
-    title: "Fresher Front-end Wed Developer",
-    company_name: "Skyblaze Studios",
-    icon: skyblaze,
-    iconBg: "#383E56",
-    date: "January 2021 - January 2022",
-    points: [
-      "Develop web applications using ReactJS, NextJS, and related technologies.",
-      "Working in tandem with cross-functional teams, including designers, product managers, and fellow developers.",
-      "Creating responsive websites and guaranteeing compatibility across different web browsers.",
-      "Engaging in code reviews and offering valuable feedback to fellow developers."
-    ],
-  },
-  {
-    title: "Junior Frontend Web Developer",
-    company_name: "Skyblaze Studios",
-    icon: skyblaze,
-    iconBg: "#383E56",
-    date: "January 2022 - Present",
+    date: "Jan 2021 - October 2023",
     points: [
       "Served as the primary frontend developer in most of the projects.",
       "Seminar on React, UI, and UX techniques for building effective components.",
@@ -155,6 +135,20 @@ const experiences = [
       "Discuss with team and propose suitable methods for each project.",
     ],
   },
+  {
+    title: "Frontend Developer Team leader",
+    company_name: "Vccorp",
+    icon: Vcc,
+    iconBg: "#FFF",
+    date: "October 2023 - Present",
+    points: [
+      "Leader HTML team WS",
+      "Seminar on React, UI, and UX techniques for building effective components",
+      "Plan and estimate time, allocate tasks, and control the output quality of team members.",
+      "Execute partners' orders using ReactJS, JavaScript, and jQuery, build a web interface, templates hub. develop plugins for news websites such as VTC, Kenh14, Soha, Tuổi Trẻ, Chính phủ",
+    ],
+  },
+  
 ];
 
 const testimonials = [
@@ -184,7 +178,169 @@ const testimonials = [
   },
 ];
 
+
 const projects = [
+
+  {
+    name: "Điểm thi THPT, Đại học 2024 - Báo tuổi trẻ",
+    time:"2024",
+    description: "Website providing information on university entrance exam results, 10th-grade entrance exam results, and university search based on scores",
+    works: [
+      "Build the source code in JavaScript to generate a JS file, create plugins according to the provided API, and embed them into the website.",
+      "Implement the UI and functionality for websites providing 10th-grade, high school, and university exam results, and university search",
+      "Create statistical charts, candidate lists, score lookup, and university search according to the provided API."
+    ],
+    link:'https://tuoitre.vn/diem-thi/tra-cuu-dai-hoc.htm',
+    tags: [
+      {
+        name: "reactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: DiemThi,
+  },
+
+
+  {
+    name: "EURO 2024 - Báo thể thao văn hóa",
+    time:"2024",
+    description: "A sports website providing information about Euro 2024.",
+    works: [
+      "Build the source code in JavaScript to generate a JS file, create plugins according to the provided API, and embed them into the website",
+      "Match schedule plugin, match result plugin, match progress plugin",
+      "Tournament bracket plugin, participating teams list plugin, team statistics by team and by individual player"
+    ],
+    link:'https://thethaovanhoa.vn/euro-2024.htm',
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: EURO,
+  },
+
+
+ {
+    name: "Admin Shop - Báo thể tuổi trẻ",
+    time:"2024",
+    description: "Website CMS Admin dashboard for the fashion store of the newspaper ",
+    works: [
+      "Developed the source code base for the Shop and integrated the admin website into the main IMS system",
+      "Implement revenue statistics, order import/export, product collections, and drag-and-drop functionality for featured products Add products to collections, CRUD collections, orders",
+    ],
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".net",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ShopTTo,
+  },
+
+  {
+    name: "Báo VTV",
+    time:"2020",
+    description: "Website for the VTV television station",
+    works: [
+      "Implement UI VTV Thể thao, VTV9, VTV8, VTV Tấm Lòng Việt page follow Figma",
+      "Responsive and fix bugs",
+      "Use canvas to save image and add sticker and frame",
+      "Control the output quality of the team",
+      "Integrate api, Responsive and fix bugs.",
+    ],
+    tags: [
+      {
+        name: ".net",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jquery",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Vtv,
+  },
+
+
+  {
+    name: "Bầu cử mỹ - Báo tuổi trẻ",
+    time:"2023",
+    description: "Website about the US election for youth",
+    works: [
+      "Build the source code in JavaScript to generate a JS file, create plugins according to the provided API, and embed them into the website.",
+      "Implement UI and function all page",
+    ],
+    link:'https://tuoitre.vn/bau-cu-tong-thong-my-e587.htm',
+    tags: [
+      {
+        name: "reactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: BCM,
+  },
+
   {
     name: "Alliance",
     time:"2020",
@@ -261,82 +417,7 @@ const projects = [
     image: virtualPhoto,
     video: VitualVideo
   },
-  {
-    name: "Alliance Version 2",
-    time:"2020",
-    description:
-      "website focusing on waste reduction and marine environmental protection.",
-    works: [
-      "Implement UI Header, Footer, OutWork, Our Stories, News, Membership, Clean4Change và Contact Us follow Figma",
-      "Implement Scroll Fade-In Effect, Floating Animation",
-      "Implement Carousel using the OwlCarousel library and custom css",
-      "Implement video autoplay react-player",
-      "Responsive and fix bug"
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "jquery",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: Aepw,
-    link: "https://endplasticwaste.org/"
-  },
-  {
-    name: "JSEA Registration",
-    time:"2020",
-    description:
-      "Website displaying event information and a registration form for participants. After successful registration, it sends an invitation ticket to the registrant's email, including the time, location, and a QR code",
-    works: [
-      "Implement UI page follow Figma.",
-      "Implement the registration function.",
-      "Implement countdown function",
-      "Integrate API register",
-      "Implementing an API to display agenda information.",
-      "Create the scroll to element function.",
-      "Responsive and fix bugs"
-    ],
-    tags: [
-      {
-        name: "Laravel",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: JseaRe,
-    video: JseaReVideo
-  },
+
   {
     name: "Etech Portal, Scan Qrcode",
     time:"2020",
@@ -462,7 +543,7 @@ const projects = [
     ],
     image: switchGame,
     source_code_link: "https://github.com/hoangtaya21997/web_drag_game",
-    link:'https://switchproductions.asia/',
+    link:'https://switchproductions.asia/experiences',
     video: SwitchVideo
   },
   {
@@ -544,49 +625,6 @@ const projects = [
     imageProject: LysbPr,
   },
   {
-    name: "HBL VE",
-    time:"2020",
-    description:
-      "website that allows HBL users to search for information and download their PDF files.",
-    works: [
-      "Implement UI page follow Figma",
-      "Responsive as per request, scaling down in both horizontal and vertical directions to ensure 100% content visibility",
-      "Integrate API Info use and function download PDF file",
-      "Fix bugs",
-    ],
-    tags: [
-      {
-        name: "Laravel",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "jquery",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: HBL,
-  },
-  {
     name: "Tableau VOD",
     time:"2020",
     description:
@@ -649,6 +687,49 @@ const projects = [
       },
     ],
     image: UnityG,
+  },
+  {
+    name: "JSEA Registration",
+    time:"2020",
+    description:
+      "Website displaying event information and a registration form for participants. After successful registration, it sends an invitation ticket to the registrant's email, including the time, location, and a QR code",
+    works: [
+      "Implement UI page follow Figma.",
+      "Implement the registration function.",
+      "Implement countdown function",
+      "Integrate API register",
+      "Implementing an API to display agenda information.",
+      "Create the scroll to element function.",
+      "Responsive and fix bugs"
+    ],
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: JseaRe,
+    video: JseaReVideo
   },
 ];
 

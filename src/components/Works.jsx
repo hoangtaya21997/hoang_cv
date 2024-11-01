@@ -122,11 +122,10 @@ const Works = () => {
         >
           The following projects showcase my skills and experience through real-life examples of my work. Please click on each project to discover more about the project details as well as my role in these projects.
           <br/>
-          All these projects have been shared on my CV with the company's approval. Additionally, I have several more projects that I haven't uploaded yet due to the need for some revisions. I will update them in the future.
         </div>
       </div>
       {isPopup && <Popup name="aaaa" handleClosePopup={()=>setPopUp(false)} data={dataPopup}/>}
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap gap-7 item-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} setDataPopup={handleSetDataPopup}/>
         ))}

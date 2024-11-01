@@ -25,6 +25,11 @@ import alliance from "./alliance.png";
 import gallery from "./gallery.png";
 import switchGame from "./switch.png";
 import virtualPhoto from "./virtualPhoto.png";
+import Vtv from "./vtv.png";
+import BCM from "./BauCuMy.png";
+import EURO from "./TTVH.png";
+import DiemThi from "./DiemThi.png";
+import ShopTTo from "./ShopTTo.png";
 import Loa from "./loa.png";
 import JseaRe from "./jsea-re.png";
 import Internet from "./internet.png";
@@ -37,6 +42,7 @@ import HBL from "./HBL.png";
 import Tableau from "./tableau.png";
 import TableauPr from "./tableau_1.png";
 import UnityG from "./unityG.png";
+import Vcc from "./vcc.jpg";
 
 import SwitchVideo from "./video/switch.mp4";
 import AllianceVideo from "./video/alliance.mp4";
@@ -87,4 +93,10 @@ export {
   JseaReVideo,
   VitualVideo,
   UnityG,
+  Vcc,
+  Vtv,
+  BCM,
+  EURO,
+  DiemThi,
+  ShopTTo
 };
