@@ -242,7 +242,7 @@ const projects = [
 
 
  {
-    name: "Admin Shop - Báo thể tuổi trẻ",
+    name: "Admin Shop - Báo tuổi trẻ",
     time:"2024",
     description: "Website CMS Admin dashboard for the fashion store of the newspaper ",
     works: [

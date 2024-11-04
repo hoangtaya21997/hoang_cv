@@ -23,18 +23,24 @@ const ProjectCard = ({
   imageProject
 }) => {
   const handleSetDataPopup = () => {
-    const data = {
-      name,
-      time,
-      description,
-      works,
-      tags,
-      video,
-      image,
-      link,
-      imageProject,
+    // const data = {
+    //   name,
+    //   time,
+    //   description,
+    //   works,
+    //   tags,
+    //   video,
+    //   image,
+    //   link,
+    //   imageProject,
+    // }
+
+    // console.log(data)
+    // setDataPopup(data)
+
+    if(link) {
+      window.open(link);
     }
-    setDataPopup(data)
   }
 
   return (
@@ -45,7 +51,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer'
+        className={`bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full ${link && 'cursor-pointer'}`}
       >
         <div className='relative w-full h-[230px]' >
           <img
@@ -120,7 +126,7 @@ const Works = () => {
         <div
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          The following projects showcase my skills and experience through real-life examples of my work. Please click on each project to discover more about the project details as well as my role in these projects.
+          The following projects showcase my skills and experience through real-life examples of my works.
           <br/>
         </div>
       </div>
